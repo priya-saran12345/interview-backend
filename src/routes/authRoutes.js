@@ -7,8 +7,9 @@ const {
 signup
 
 }=require("../controllers/authController");
-
-
+const {
+login
+}=require("../controllers/authController");
 
 /**
  * @swagger
@@ -62,6 +63,7 @@ router.post(
 "/signup",
 signup
 );
+router.post("/login", login);
 
 
 
